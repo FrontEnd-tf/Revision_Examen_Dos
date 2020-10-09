@@ -27,25 +27,56 @@
     <meta name="theme-color" content="#fafafa" />
   </head>
   <body>
-    <!-- *** ESTRUCTURA SEMÁNTICA *** -->
-    <!-- Header (encabezado de la página, zona superior) -->
-    <header>
-      <!-- nav (el navegador de toda la web) -->
-      <nav>
-        <a href="" class="link1">link1</a>
-        <a href="" class="link2">link2</a>
-        <a href="" class="link3">link3</a>
-        <a href="" class="link4">link4</a>
-      </nav>
-    </header>
-    <!-- Main (centro de la página, zona central) -->
-    <main>
-      <!-- section y article (posibilidades dentro de main) -->
-    </main>
-    <!-- Footer (final de la página, zona inferior) -->
-    <footer>
-      <h4>&copy;Copyright</h4>
-    </footer>
+    <!-- Contenedor con un GRID padre 
+      Columnas 10% (margen) 1fr (header, main) 10% (margen)
+      Filas 100px (header) 1fr (main) -->
+    <div class="container">
+      <!-- subGrid header 
+          columnas 1fr 1fr 1fr;
+          align-items: center;
+      -->
+      <header>
+        <!-- logotipo -->
+        <h1 class="header_logo">uber</h1>
+        <!-- nav display Flex, space-between -->
+        <nav class="header_menu">
+          <a href="#" class="header_menu_home">Home</a>
+          <a href="#" class="header_menu_com">Company</a>
+          <a href="#" class="header_menu_self">Safety</a>
+          <a href="#" class="header_menu_help">Help</a>
+        </nav>
+        <!-- boton alineado a la derecha
+            justify-self: end
+        -->
+        <a class="header_boton" href="#">join now</a>
+      </header>
+
+      <main>
+        <!-- subGrid MAIN
+          columnas 1fr(img) 2fr (texto)
+        -->
+        <figure class="main_imagen"></figure>
+        <section class="main_texto">
+          <!-- texto -->
+          <h2 class="main_texto_titulo">sdfds</h2>
+          <h4 class="main_texto_subti01">asdas</h4>
+          <h4 class="main_texto_subti02">asdasd</h4>
+          <!-- formulario email -->
+          <form class="main_texto_formulario" action="">
+            <input
+              class="main_texto_formulario_input"
+              type="email"
+              placeholder="sdfdsf"
+            />
+            <button class="main_texto_formulario_boton" type="submit">
+              sdfsd
+            </button>
+          </form>
+          <!-- boton scroll -->
+          <a href="#">felcha</a><span>skjdhkjsh</span>
+        </section>
+      </main>
+    </div>
 
     <!-- *** Google Analytics *** -->
     <script src="https://www.google-analytics.com/analytics.js" async></script>
